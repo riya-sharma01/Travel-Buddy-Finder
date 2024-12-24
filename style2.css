@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2023/03/14/Landscape-Nature-Illustration-Digital-Trees-Stream-Mountains-Flowers-Waterfall-Forest-64327545-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-decoration: solid;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+h1 {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    display: inline-block;
+}
+.addTravelForm {
+    text-decoration: solid;
+    width: 500px;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.form-group {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    color:black
+}
+
+.form-group label{
+    width: 200px;
+    text-align: left;
+    text-decoration: black;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

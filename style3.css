@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-nature-scenery-free-image.jpeg?w=600&quality=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: lavender; 
+    border-radius: 10px; 
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 15px; 
+    padding: 20px; 
+    background-color: rgba(10, 90, 196, 0.5); 
+    border-radius: 10px; 
+    font-size: larger;
+    display: inline-block;
+}
+
+.form  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;   
+}
+
+.form-group {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+.form-group label {
+    width: 200px;
+    text-align: left;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Travel Companion</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <div class="container">
-        <h1>Find Travel Companions</h1>
+        <h1>Find Travel Buddies</h1>
+        <p>Connect with like-minded travelers and plan your adventures together.</p>
         
-        <!-- Search Form -->
-        <form id="searchForm">
-            <label for="searchDestination">Destination:</label>
-            <input type="text" id="searchDestination" placeholder="Enter destination to search" required>
+        <form action="/search" method="GET" class="form">
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination to search" required>
+            </div>
 
-            <label for="searchInterests">Interests:</label>
-            <select id="searchInterests" required>
-                <option value="" disabled selected>Select interests to search</option>
-                <option value="Adventure">Adventure</option>
-                <option value="Beaches">Beaches</option>
-                <option value="Nature">Nature</option>
-                <option value="Culture">Culture</option>
-                <option value="History">History</option>
-                <option value="Food">Food</option>
-                <option value="Nightlife">Nightlife</option>
-                <option value="Relaxation">Relaxation</option>
-            </select>
+            <div class="form-group">
+                <label for="interests">Interests</label>
+                <select id="interests" name="interests" required>
+                    <option value="" disabled selected>Select interests to search</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Culture">Culture</option>
+                    <option value="Nature">Nature</option>
+                    <option value="History">History</option>
+                    <option value="Food">Food</option>
+                </select>
+            </div>
 
-            <label for="searchDates">Travel Dates:</label>
-            <input type="date" id="searchDates" required>
+            <div class="form-group">
+                <label for="travel-date">Travel Date</label>
+                <input type="date" id="travel-date" name="date" required>
+            </div>
 
-            <button type="submit">Search</button>
+            <div class="form-group">
+                <button type="submit">Search</button>
+            </div>
         </form>
-        
-        <!-- Display Search Results -->
-        <div id="results" class="results-container">
-            <!-- Results will be shown here -->
-        </div>
     </div>
 
-    <script src="travel.js"></script>
+    <script src="Buddy.js"></script>
 </body>
 </html>

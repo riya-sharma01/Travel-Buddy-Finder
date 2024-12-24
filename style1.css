@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('"C:\Users\DELL\Desktop\tourism.jpg"'); 
 }
 
 .landing-page {
+    background-image: url('https://visitturkey.in/wp-content/uploads/2024/07/adventure-tourism-in-turkey.webp');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -20,11 +21,12 @@ body {
 }
 
 .overlay {
-    background-color: blueviolet;
-    padding: 100px;
+    background-color: white;
+    padding: 40px;
     text-align: center;
-    color: white;
-    border-radius: 8px;
+    color: black;
+    border-radius: 10px;
+   
 }
 
 h1 {
@@ -41,7 +43,6 @@ p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Button Styling */
 .button-container {
     display: flex;
     justify-content: center;
@@ -69,9 +70,14 @@ p {
     background-color: red;
 }
 
-/* Form & Inputs Styling */
 .container {
-    padding: 40px;
+    
+    color: black;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border:10px
+    padding: 0px;
     text-align: center;
 }
 
@@ -92,6 +98,7 @@ h2 {
 }
 
 .companion {
+    background-image: url("https://visitturkey.in/wp-content/uploads/2024/07/tourist-attractions-in-turkey-top-10-spots-for-adventure-in-turkey.webp");
     background-color: #f0f0f0;
     padding: 15px;
     margin: 10px;
@@ -104,7 +111,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .landing-page {
         height: auto;
