@@ -11,7 +11,7 @@
         <h1>Find Travel Buddies</h1>
         <p>Connect with like-minded travelers and plan your adventures together.</p>
         
-        <form action="/search" method="GET" class="form">
+        <form class="form">
             <div class="form-group">
                 <label for="destination">Destination</label>
                 <input type="text" id="destination" name="destination" placeholder="Enter destination to search" required>
@@ -38,6 +38,11 @@
                 <button type="submit">Search</button>
             </div>
         </form>
+
+        <div id="results-container">
+            <h2>Search Results</h2>
+            <div id="results"></div>
+        </div>
     </div>
 
     <script src="Buddy.js"></script>
