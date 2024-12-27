@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Buddy Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Search Results</h1>
+        <p>Here are your potential travel companions:</p>
+        
+        <!-- Table for displaying results -->
+        <div id="results">
+            <table id="resultsTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Destination</th>
+                        <th>Interests</th>
+                        <th>Travel Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <a href="travel.html" class="back-button">Go Back to Search</a>
+    </div>
+
+    <script>
+        // Get search results from localStorage
+        const resultsTableBody = document.querySelector("#resultsTable tbody");
+        const results = JSON.parse(localStorage.getItem("searchResults")) || [];
+
+        if (results.length > 0) {
+            results.forEach((result) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${result.name}</td>
+                    <td>${result.contact}</td>
+                    <td>${result.destination}</td>
+                    <td>${result.interests}</td>
+                    <td>${result.travelDates}</td>
+                `;
+                resultsTableBody.appendChild(row);
+            });
+        } else {
+            const noResultsMessage = document.createElement("tr");
+            noResultsMessage.innerHTML = `
+                <td colspan="5" style="text-align: center;">No matches found. Try a different search.</td>
+            `;
+            resultsTableBody.appendChild(noResultsMessage);
+        }
+    </script>
+</body>
+</html>

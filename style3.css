@@ -32,7 +32,7 @@ h1 {
 p {
     margin-bottom: 15px; 
     padding: 20px; 
-    background-color: rgba(10, 90, 196, 0.5); 
+    background-color: #0a5ac480; 
     border-radius: 10px; 
     font-size: larger;
     display: inline-block;

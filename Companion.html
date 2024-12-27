@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Travel Companion</title>
+    <title>Find a Travel Buddy</title>
     <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <div class="container">
-        <h1>Find Travel Buddies</h1>
+        <h1>Find a Travel Companion</h1>
         <p>Connect with like-minded travelers and plan your adventures together.</p>
         
         <form class="form">
             <div class="form-group">
-                <label for="destination">Destination</label>
+                <label for="destination">Destination:</label>
                 <input type="text" id="destination" name="destination" placeholder="Enter destination to search" required>
             </div>
 
             <div class="form-group">
-                <label for="interests">Interests</label>
+                <label for="interests">Interests:</label>
                 <select id="interests" name="interests" required>
-                    <option value="" disabled selected>Select interests to search</option>
+                    <option value="" disabled selected>Select your interest</option>
                     <option value="Adventure">Adventure</option>
                     <option value="Culture">Culture</option>
                     <option value="Nature">Nature</option>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="form-group">
-                <label for="travel-date">Travel Date</label>
+                <label for="travel-date">Travel Date:</label>
                 <input type="date" id="travel-date" name="date" required>
             </div>
 
@@ -39,10 +39,7 @@
             </div>
         </form>
 
-        <div id="results-container">
-            <h2>Search Results</h2>
-            <div id="results"></div>
-        </div>
+        <div id="searchFeedback" class="hidden">Searching for travel companions...</div>
     </div>
 
     <script src="Buddy.js"></script>

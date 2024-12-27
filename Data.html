@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Travel Data</title>
     <link rel="stylesheet" href="style2.css">
-    
 </head>
 <body>
     <div class="container">
-        <h1>Add Your Travel Data</h1>
+        <h1>Add Your Travel Details</h1>
         
         <form class="addTravelForm">
             <div class="form-group">
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="text" id="name" placeholder="Enter your name (e.g., John Doe)" required>
             </div>
 
             <div class="form-group">
-                <label for="contact">Your Contact (email or phone):</label>
-                <input type="text" id="contact" placeholder="Enter your contact info" required>
+                <label for="contact">Your Contact (Email or Phone):</label>
+                <input type="text" id="contact" placeholder="Enter your contact info (e.g., john@example.com)" required>
             </div>
 
             <div class="form-group">
                 <label for="destination">Destination:</label>
-                <input type="text" id="destination" placeholder="Enter your destination" required>
+                <input type="text" id="destination" placeholder="Enter your travel destination (e.g., Manali)" required>
             </div>
 
             <div class="form-group">
                 <label for="interests">Interests:</label>
                 <select id="interests" required>
-                    <option value="" disabled selected>Select your interests</option>
+                    <option value="" disabled selected>Select your interest</option>
                     <option value="Adventure">Adventure</option>
                     <option value="Culture">Culture</option>
                     <option value="Nature">Nature</option>
@@ -46,11 +45,17 @@
 
             <button type="submit">Add Travel Data</button>
         </form>
-        
-        <div id="successMessage"></div>
     </div>
 
     <script src="Buddy.js"></script>
 
+    <script>
+        // Set the minimum date for the travel date input to today's date
+        document.addEventListener("DOMContentLoaded", function () {
+            const travelDateInput = document.getElementById("travelDates");
+            const today = new Date().toISOString().split("T")[0];  // Get current date in YYYY-MM-DD format
+            travelDateInput.setAttribute("min", today);  // Set the 'min' attribute to today's date
+        });
+    </script>
 </body>
 </html>
