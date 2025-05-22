@@ -32,8 +32,8 @@ if (addTravelForm) {
         // Show success message
         alert("Travel data added successfully!");
 
-        // Redirect to the first page (e.g., travel.html)
-        window.location.href = "travel.html";
+        // Redirect to the first page (e.g., index.html)
+        window.location.href = "index.html";
     });
 }
 
